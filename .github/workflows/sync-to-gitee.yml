@@ -142,29 +142,79 @@ jobs:
           GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
           GITEE_OWNER: ${{ secrets.GITEE_USERNAME || 'xiong_ying001' }}
           GITEE_REPO: ${{ secrets.GITEE_REPO || 'NS_vispin' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -z "$RELEASE_ID" ]; then
             echo "❌ 无法获取 Release ID，跳过文件上传"
             exit 0
           fi
 
-          # 上传 GitHub Release 中的每个文件
-          for asset in ${{ toJSON(github.event.release.assets) }}; do
-            ASSET_URL=$(echo $asset | grep -o '"browser_download_url":"[^"]*"' | cut -d'"' -f4)
-            ASSET_NAME=$(echo $asset | grep -o '"name":"[^"]*"' | cut -d'"' -f4)
-            
+          echo "🔍 开始获取 GitHub Release assets..."
+          
+          # 方法1: 使用 GitHub API 通过 release ID 获取 assets
+          RELEASE_ID_GITHUB="${{ github.event.release.id }}"
+          ASSETS_JSON=$(curl -s -H "Authorization: token ${GITHUB_TOKEN}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID_GITHUB}/assets")
+          
+          # 如果失败，尝试通过 tag 获取
+          if [ -z "$ASSETS_JSON" ] || echo "$ASSETS_JSON" | grep -q "Not Found"; then
+            echo "⚠️  通过 release ID 获取失败，尝试通过 tag 获取..."
+            TAG_NAME="${{ github.event.release.tag_name }}"
+            RELEASE_INFO=$(curl -s -H "Authorization: token ${GITHUB_TOKEN}" \
+              -H "Accept: application/vnd.github.v3+json" \
+              "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/tags/${TAG_NAME}")
+            RELEASE_ID_GITHUB=$(echo "$RELEASE_INFO" | grep -o '"id":[0-9]*' | head -1 | grep -o '[0-9]*')
+            if [ -n "$RELEASE_ID_GITHUB" ]; then
+              ASSETS_JSON=$(curl -s -H "Authorization: token ${GITHUB_TOKEN}" \
+                -H "Accept: application/vnd.github.v3+json" \
+                "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID_GITHUB}/assets")
+            fi
+          fi
+          
+          # 检查 assets 数量
+          ASSETS_COUNT=$(echo "$ASSETS_JSON" | grep -o '"id"' | wc -l)
+          echo "📦 找到 ${ASSETS_COUNT} 个 assets"
+          
+          if [ "$ASSETS_COUNT" -eq 0 ]; then
+            echo "⚠️  未找到任何 assets，跳过上传"
+            exit 0
+          fi
+          
+          # 使用 jq 解析并上传每个 asset（GitHub Actions 默认包含 jq）
+          echo "$ASSETS_JSON" | jq -r '.[] | "\(.browser_download_url)|\(.name)|\(.size)"' | while IFS='|' read -r ASSET_URL ASSET_NAME ASSET_SIZE; do
             if [ -n "$ASSET_URL" ] && [ -n "$ASSET_NAME" ]; then
-              echo "📤 上传文件: ${ASSET_NAME}"
+              echo "📤 上传文件: ${ASSET_NAME} (大小: ${ASSET_SIZE} 字节)"
               
               # 下载文件
-              curl -L -o /tmp/${ASSET_NAME} "${ASSET_URL}"
+              echo "⬇️  正在下载: ${ASSET_URL}"
+              curl -L -f -o /tmp/${ASSET_NAME} "${ASSET_URL}"
+              
+              if [ $? -ne 0 ]; then
+                echo "❌ 下载失败: ${ASSET_NAME}"
+                continue
+              fi
               
               # 上传到 Gitee
-              curl -X POST \
+              echo "⬆️  正在上传到 Gitee..."
+              UPLOAD_RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
                 "https://gitee.com/api/v5/repos/${GITEE_OWNER}/${GITEE_REPO}/releases/${RELEASE_ID}/assets?access_token=${GITEE_TOKEN}" \
                 -F "file=@/tmp/${ASSET_NAME}" \
-                -F "name=${ASSET_NAME}"
+                -F "name=${ASSET_NAME}")
               
-              echo "✅ ${ASSET_NAME} 上传成功"
+              HTTP_CODE=$(echo "$UPLOAD_RESPONSE" | tail -1)
+              RESPONSE_BODY=$(echo "$UPLOAD_RESPONSE" | head -n -1)
+              
+              if [ "$HTTP_CODE" = "201" ] || echo "$RESPONSE_BODY" | grep -q '"id"'; then
+                echo "✅ ${ASSET_NAME} 上传成功"
+              else
+                echo "❌ ${ASSET_NAME} 上传失败 (HTTP: ${HTTP_CODE})"
+                echo "响应: ${RESPONSE_BODY}"
+              fi
+              
+              # 清理临时文件
+              rm -f /tmp/${ASSET_NAME}
             fi
           done
+          
+          echo "🎉 Assets 上传完成"
