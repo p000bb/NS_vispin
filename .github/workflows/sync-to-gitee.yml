@@ -7,8 +7,8 @@ on:
       - main
       - master
     tags:
-      - 'v*'  # 同步标签
-  
+      - "v*" # 同步标签
+
   # Release 发布时触发
   release:
     types: [published]
@@ -19,30 +19,30 @@ jobs:
     runs-on: ubuntu-latest
     # 只在代码推送时执行
     if: github.event_name == 'push'
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 获取完整历史记录，包括标签
-      
+          fetch-depth: 0 # 获取完整历史记录，包括标签
+
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.GITEE_SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan gitee.com >> ~/.ssh/known_hosts
-      
+
       - name: Configure Git
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-      
+
       - name: Push to Gitee
         run: |
           git remote add gitee git@gitee.com:${{ secrets.GITEE_USERNAME || 'xiong_ying001' }}/${{ secrets.GITEE_REPO || 'NS_vispin' }}.git || true
           git remote set-url gitee git@gitee.com:${{ secrets.GITEE_USERNAME || 'xiong_ying001' }}/${{ secrets.GITEE_REPO || 'NS_vispin' }}.git
-          
+
           # 推送所有分支和标签
           git push gitee --all --force
           git push gitee --tags --force
@@ -52,32 +52,54 @@ jobs:
     runs-on: ubuntu-latest
     # 只在 Release 发布时执行
     if: github.event_name == 'release'
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+        with:
+          fetch-depth: 0 # 获取完整历史记录，包括标签
+
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.GITEE_SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan gitee.com >> ~/.ssh/known_hosts
-      
+
       - name: Configure Git
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-      
+
       - name: Sync code and tag to Gitee
         run: |
           git remote add gitee git@gitee.com:${{ secrets.GITEE_USERNAME || 'xiong_ying001' }}/${{ secrets.GITEE_REPO || 'NS_vispin' }}.git || true
           git remote set-url gitee git@gitee.com:${{ secrets.GITEE_USERNAME || 'xiong_ying001' }}/${{ secrets.GITEE_REPO || 'NS_vispin' }}.git
+
+          # 获取当前分支名
+          CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
           
-          # 推送代码和标签
-          git push gitee HEAD:main --force || git push gitee HEAD:master --force
-          git push gitee ${{ github.event.release.tag_name }} --force
-      
+          # 推送代码到 main 或 master 分支（使用完全限定的引用名称）
+          if git ls-remote --heads gitee main | grep -q .; then
+            echo "推送到 main 分支"
+            git push gitee HEAD:refs/heads/main --force
+          elif git ls-remote --heads gitee master | grep -q .; then
+            echo "推送到 master 分支"
+            git push gitee HEAD:refs/heads/master --force
+          else
+            echo "Gitee 上不存在 main 或 master 分支，推送到 main"
+            git push gitee HEAD:refs/heads/main --force
+          fi
+          
+          # 推送标签（使用完全限定的引用名称）
+          TAG_NAME="${{ github.event.release.tag_name }}"
+          if git rev-parse "$TAG_NAME" >/dev/null 2>&1; then
+            echo "推送标签: $TAG_NAME"
+            git push gitee refs/tags/${TAG_NAME}:refs/tags/${TAG_NAME} --force
+          else
+            echo "⚠️  标签 $TAG_NAME 不存在，跳过标签推送"
+          fi
+
       - name: Create Gitee Release
         env:
           GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
@@ -89,7 +111,7 @@ jobs:
         run: |
           # 获取当前 commit hash（Gitee 需要 target_commitish）
           COMMIT_HASH=$(git rev-parse HEAD)
-          
+
           # 创建 Release
           RELEASE_RESPONSE=$(curl -s -X POST \
             "https://gitee.com/api/v5/repos/${GITEE_OWNER}/${GITEE_REPO}/releases?access_token=${GITEE_TOKEN}" \
@@ -101,20 +123,20 @@ jobs:
               "target_commitish": "'"${COMMIT_HASH}"'",
               "prerelease": false
             }')
-          
+
           # 提取 Release ID
           RELEASE_ID=$(echo $RELEASE_RESPONSE | grep -o '"id":[0-9]*' | grep -o '[0-9]*' | head -1)
-          
+
           if [ -z "$RELEASE_ID" ]; then
             echo "⚠️  Release 可能已存在，尝试获取现有 Release..."
             RELEASE_RESPONSE=$(curl -s -X GET \
               "https://gitee.com/api/v5/repos/${GITEE_OWNER}/${GITEE_REPO}/releases/tags/${TAG_NAME}?access_token=${GITEE_TOKEN}")
             RELEASE_ID=$(echo $RELEASE_RESPONSE | grep -o '"id":[0-9]*' | grep -o '[0-9]*' | head -1)
           fi
-          
+
           echo "RELEASE_ID=${RELEASE_ID}" >> $GITHUB_ENV
           echo "✅ Gitee Release 创建成功，ID: ${RELEASE_ID}"
-      
+
       - name: Upload Release Assets
         env:
           GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
@@ -125,7 +147,7 @@ jobs:
             echo "❌ 无法获取 Release ID，跳过文件上传"
             exit 0
           fi
-          
+
           # 上传 GitHub Release 中的每个文件
           for asset in ${{ toJSON(github.event.release.assets) }}; do
             ASSET_URL=$(echo $asset | grep -o '"browser_download_url":"[^"]*"' | cut -d'"' -f4)
