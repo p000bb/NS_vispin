@@ -1,0 +1,11 @@
+{
+  "version": "1.1.0",
+  "notes": "- 中文\n  - 添加自动更新功能\n  \n- English\n  - Add automatic update function",
+  "pub_date": "2025-11-25T06:13:32.741Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5Sjg5cmJ0T2gvVEJDcUxwVXgwd24rd2g1WHpzdXcrVVRiOUV4VzFnaExna3BMK25hdnJYOWVaUUxncS8rN1B5bTUrSWxhSWdqR2IxME9XY2FEVlNYM3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0MDUxMjAyCWZpbGU6TlRGeF8xLjEuMF94NjQtc2V0dXAuZXhlCkd2WGxob2lxRTM5eWhiSjlaMVJPU0hpbllEekltRWxJMTFGb2lMM3RVcFJMU1Nld3JRZlRiOEVWSXB5WEN2aXZMVW9RVWRkdG94WVl5RzZyRVdDb0JBPT0K",
+      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v1.1.0/NTFx_1.1.0_x64-setup.exe"
+    }
+  }
+}

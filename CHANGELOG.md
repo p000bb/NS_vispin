@@ -2,7 +2,8 @@
 - 初版发布
 
 # 1.1.0
-- 添加自动更新功能
+- 中文
+  - 添加自动更新功能
   
-# 1.2.0
-- 测试
+- English
+  - Add automatic update function
