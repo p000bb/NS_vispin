@@ -1,11 +1,11 @@
 {
   "version": "1.1.0",
-  "notes": "- 添加自动更新功能",
-  "pub_date": "2025-11-25T02:38:53.607Z",
+  "notes": "- 中文\n  - 添加自动更新功能\n- 英文\n - Add automatic update function",
+  "pub_date": "2025-11-25T03:33:21.742Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SjY1U1RRZDVRYkhrZzk4ams5QUJqN1RqZXhOZUh6TVdMWEplZTNSdE9FZU8vWmZWNklYWU1iaDBsTHlhMUlLK1ovN21iV1pqb09YOTFGSllUM1hvblFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0MDM4MzE2CWZpbGU6TlRGeF8xLjAuMF94NjQtc2V0dXAuZXhlCkQ5ZDVPUWhkWWJHd3oyRWFaTFdIcVNEKzNGNlJYbVA3dDJ5VWt0SnY3aUZaaWxCM0JldktVWEVzMENUQ1FqODNiT1ZveEloajJWWGdVR3QraFJveUJnPT0K",
-      "url": "https://github.com/p000bb/NS_vispin/releases/download/v1.1.0/NTFx_1.0.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SnpwUTlFMmNEQWlhL2FTV29CcVMzN1ErMnArd1VhVHFLcm1RQUlBMG8zRVBCTFJ2aWRldUYvUldQQktrYXdoZmJucC9TUllGdFlRNlJuMDdlMEZyR1FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0MDQxNTc4CWZpbGU6TlRGeF8xLjAuMF94NjQtc2V0dXAuZXhlCmNET3ZtK1Rhc3ZlcnUvNHdVWU40V1VsMHRML3hLYUNFK3NrQ0JFd25zYXpJOHZ2UVFsYk5taThlWlVGS2RnT25JWW9Zbm1YSFB5NGZXUlJDRks5RURRPT0K",
+      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v1.1.0/NTFx_1.0.0_x64-setup.exe"
     }
   }
 }
