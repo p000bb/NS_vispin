@@ -1,0 +1,11 @@
+{
+  "version": "1.1.0",
+  "notes": "- 添加自动更新功能",
+  "pub_date": "2025-11-25T02:38:53.607Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SjY1U1RRZDVRYkhrZzk4ams5QUJqN1RqZXhOZUh6TVdMWEplZTNSdE9FZU8vWmZWNklYWU1iaDBsTHlhMUlLK1ovN21iV1pqb09YOTFGSllUM1hvblFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0MDM4MzE2CWZpbGU6TlRGeF8xLjAuMF94NjQtc2V0dXAuZXhlCkQ5ZDVPUWhkWWJHd3oyRWFaTFdIcVNEKzNGNlJYbVA3dDJ5VWt0SnY3aUZaaWxCM0JldktVWEVzMENUQ1FqODNiT1ZveEloajJWWGdVR3QraFJveUJnPT0K",
+      "url": "https://github.com/p000bb/NS_vispin/releases/download/v1.1.0/NTFx_1.0.0_x64-setup.exe"
+    }
+  }
+}
