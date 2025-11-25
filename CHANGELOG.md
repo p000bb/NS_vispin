@@ -3,6 +3,8 @@
 
 # 1.1.0
 - 中文
+  feat:
   - 添加自动更新功能
-- 英文
- - Add automatic update function
+  
+- English
+  - Add automatic update function
