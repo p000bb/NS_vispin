@@ -2,4 +2,7 @@
 - 初版发布
 
 # 1.1.0
-- 添加自动更新功能
+- 中文
+  - 添加自动更新功能
+- 英文
+ - Add automatic update function
