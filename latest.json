@@ -1,13 +1,14 @@
 {
   "version": "1.1.1",
-  "notes": {
+  "notes": "Features\n---\n- fix the issue that the pin function conflict detection fails due to the presence of spaces in the pin data when parsing the chip data\n---\nFixes\n---\n- fix the issue that the EXTI column is missing when exporting Excel\n---",
+  "notes_i18n": {
     "zh-CN": "Features\n---\n- 新增系统托盘\n---\nFixes\n---\n- 修复导出Excel的时候，缺少自定义EXTI列\n- 修复解析芯片数据的时候，引脚数据中包含空格导致引脚功能冲突检测失效的问题\n---",
     "en": "Features\n---\n- fix the issue that the pin function conflict detection fails due to the presence of spaces in the pin data when parsing the chip data\n---\nFixes\n---\n- fix the issue that the EXTI column is missing when exporting Excel\n---"
   },
-  "pub_date": "2025-11-26T03:04:43.126Z",
+  "pub_date": "2025-11-26T03:16:17.590Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5Sjg3M2dEQUpCd2FTa3BRWjBiaUVneG52TnJ5aTlNZDFzRFBEM1dzR1ZUMlljakhqVDJOcmgwTktEYm02TGI3cmsrRHNIbnJhYUNTOHEwOWpTYklYT3dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0MTI2MjYyCWZpbGU6bnRmeC5leGUKY3dMTk0wcFJHY0xZQVZxb0ZXekhMUXNkRFNXVkFncmRrTzNXM3A5M0xHbTh3TG5STEhkN05MWjFNOEFEeTluT2pReGxYRjZZeXNidUN6dnBPTllaRGc9PQo=",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SjRNTmpQR1ZDaGtzQjdDNm5wb3YwMkpjZ0Myc3VZbGVzQWszaURVMHRqaGdaRVcyRUdiR1lTdFV2bzA2L3l3Q1B2eThqZzBrL29PSU4rdTRtaXlmblFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0MTI2OTU1CWZpbGU6bnRmeC5leGUKZXJnTmUxeThqZ21OM0lRRlB5MFpmNHdBNThXZkIvVHE5RUNBR3FTQU1aWHlkeDh5aXNRSm5Hb0lVZzM5dFlCL0RoYW1EYU1LMlVvQzBlK0tsS2ltQWc9PQo=",
       "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v1.1.1/ntfx.exe"
     }
   }
