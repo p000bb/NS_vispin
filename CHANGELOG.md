@@ -2,15 +2,17 @@
 - 初版发布
 
 # 1.1.0
-- 中文
+Features
+---
   - 添加自动更新功能
-  
-- English
-  - Add automatic update function
-
+---
 # 1.1.1
-- 修复bug:
-  - 修复解析芯片数据的时候，引脚数据中包含空格导致引脚功能冲突检测失效的问题
-
-- fix bugs:
-  - fix the issue that the pin function conflict detection fails due to the presence of spaces in the pin data when parsing the chip data
+Features
+---
+- 新增系统托盘
+---
+Fixes
+---
+- 修复导出Excel的时候，缺少自定义EXTI列
+- 修复解析芯片数据的时候，引脚数据中包含空格导致引脚功能冲突检测失效的问题
+---
