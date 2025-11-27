@@ -3,9 +3,7 @@
 
 # 1.1.0
 Features
----
 - Add automatic update function
----
 
 # 1.1.1
 Features
@@ -17,3 +15,11 @@ Fixes
 - Fix the issue that the EXTI column is missing when exporting Excel
 - Fix the issue that the pin function conflict detection fails due to the presence of spaces in the pin data when parsing the chip data
 - Fix the issue that the EXTI function of some combined pins cannot be displayed properly
+
+# 1.1.2
+Features
+- Optimize the display of pin names, now it will automatically adapt the text size according to the content
+
+Fixes
+- Fix the issue that the pin data is not updated when switching the chip data, resulting in incorrect statistics data
+- Fix the issue that the pin data is not updated when switching the chip data, resulting in incorrect detection results
