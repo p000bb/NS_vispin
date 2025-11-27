@@ -1,15 +1,15 @@
 {
-  "version": "1.1.1",
-  "notes": "Features\n- Add system tray\n- Optimize the length logic of the pin function dropdown to avoid overflow issues\n- Optimize the direction of bottom pin text display to match the direction of top pin text display\n\nFixes\n- Fix the issue that the EXTI column is missing when exporting Excel\n- Fix the issue that the pin function conflict detection fails due to the presence of spaces in the pin data when parsing the chip data\n- Fix the issue that the EXTI function of some combined pins cannot be displayed properly",
+  "version": "1.1.2",
+  "notes": "Features\n- Optimize the display of pin names, now it will automatically adapt the text size according to the content\n\nFixes\n- Fix the issue that the pin data is not updated when switching the chip data, resulting in incorrect statistics data\n- Fix the issue that the pin data is not updated when switching the chip data, resulting in incorrect detection results",
   "notes_i18n": {
-    "zh-CN": "Features\n- 新增系统托盘\n- 优化引脚功能下拉框的长度逻辑，避免出现溢出问题\n- 优化底部引脚文字显示的方向，调整为和上方引脚文字显示方向一致\n\nFixes\n- 修复导出Excel的时候，缺少自定义EXTI列\n- 修复解析芯片数据的时候，引脚数据中包含空格导致引脚功能冲突检测失效的问题\n- 修复部分组合引脚的EXTI功能无法正常显示的问题",
-    "en": "Features\n- Add system tray\n- Optimize the length logic of the pin function dropdown to avoid overflow issues\n- Optimize the direction of bottom pin text display to match the direction of top pin text display\n\nFixes\n- Fix the issue that the EXTI column is missing when exporting Excel\n- Fix the issue that the pin function conflict detection fails due to the presence of spaces in the pin data when parsing the chip data\n- Fix the issue that the EXTI function of some combined pins cannot be displayed properly"
+    "zh-CN": "Features\n- 优化引脚名称的显示，现在会自动根据内容自适应文字大小\n\nFixes\n- 修复统计面板在切换芯片数据的时候，引脚数据没有更新导致统计数据不正确的问题\n- 修复引脚功能冲突检测在切换芯片数据的时候，引脚数据没有更新导致检测结果不正确的问题",
+    "en": "Features\n- Optimize the display of pin names, now it will automatically adapt the text size according to the content\n\nFixes\n- Fix the issue that the pin data is not updated when switching the chip data, resulting in incorrect statistics data\n- Fix the issue that the pin data is not updated when switching the chip data, resulting in incorrect detection results"
   },
-  "pub_date": "2025-11-26T08:45:28.702Z",
+  "pub_date": "2025-11-27T10:07:19.685Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SnloSXd3MndvQmpJeGYyM3N6RStiMnRGdnZWL1lGKzdkTjF5MTNMbmp6UG52MTNPS3VETDBZY0xNaFVIOEJ1ZVlZZHlQZm9yU3Vvc3ptMDAyK3YwZUFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0MTQ2NjY4CWZpbGU6bnRmeC5leGUKTmlpdnc1UXZBTG5FK0c4ak1uNm5TUHBhSm5yblZGUVVucGI0dm1haitwOW9FWnJBOWpIdGsyVkc2VFdYZXpxWUQrZWVTeXNoa2RiL0wrS2lyUVdGQ1E9PQo=",
-      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v1.1.1/ntfx.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5Sit0bEZPOGcwb0wySXpLZFNBMmFlVy92UXNMYVdaNGphQ0hLbHFDTWhDL1BMNW85MEZMdXNOVFdITFZQRkJsN1ZWYW1TTzVHdEJ1aU1EZVBhVHQ3UFF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0MjM3OTk0CWZpbGU6bnRmeC5leGUKc09WcTcxSHZsV256QWtiblZpeWF6OHJOR2FSaHhjNkFaMGdkS3d5MXMrUlNzaStDUzRnZlJTd2dBV2NaRTAvbFp1ZTdCTjdTbXdCSi9MamllcXNuRGc9PQo=",
+      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v1.1.2/ntfx.exe"
     }
   }
 }
