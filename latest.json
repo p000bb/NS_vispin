@@ -1,15 +1,15 @@
 {
-  "version": "1.1.2",
-  "notes": "Features\n- Optimize the display of pin names, now it will automatically adapt the text size according to the content\n\nFixes\n- Fix the issue that the pin data is not updated when switching the chip data, resulting in incorrect statistics data\n- Fix the issue that the pin data is not updated when switching the chip data, resulting in incorrect detection results",
+  "version": "1.1.3",
+  "notes": "Features\n- Add hover tooltip for pin functions, when hovering over a pin, the pin function will be displayed\n\nFixes\n- Fix the issue that the program path cannot be updated normally under Chinese path",
   "notes_i18n": {
-    "zh-CN": "Features\n- 优化引脚名称的显示，现在会自动根据内容自适应文字大小\n\nFixes\n- 修复统计面板在切换芯片数据的时候，引脚数据没有更新导致统计数据不正确的问题\n- 修复引脚功能冲突检测在切换芯片数据的时候，引脚数据没有更新导致检测结果不正确的问题",
-    "en": "Features\n- Optimize the display of pin names, now it will automatically adapt the text size according to the content\n\nFixes\n- Fix the issue that the pin data is not updated when switching the chip data, resulting in incorrect statistics data\n- Fix the issue that the pin data is not updated when switching the chip data, resulting in incorrect detection results"
+    "zh-CN": "Features\n- 新增引脚功能悬浮提示功能，鼠标悬浮在引脚上时，会显示引脚功能\n\nFixes\n- 修复程序路径在中文路径下无法正常更新程序的问题",
+    "en": "Features\n- Add hover tooltip for pin functions, when hovering over a pin, the pin function will be displayed\n\nFixes\n- Fix the issue that the program path cannot be updated normally under Chinese path"
   },
-  "pub_date": "2025-11-27T10:07:19.685Z",
+  "pub_date": "2025-11-28T07:43:55.275Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5Sit0bEZPOGcwb0wySXpLZFNBMmFlVy92UXNMYVdaNGphQ0hLbHFDTWhDL1BMNW85MEZMdXNOVFdITFZQRkJsN1ZWYW1TTzVHdEJ1aU1EZVBhVHQ3UFF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0MjM3OTk0CWZpbGU6bnRmeC5leGUKc09WcTcxSHZsV256QWtiblZpeWF6OHJOR2FSaHhjNkFaMGdkS3d5MXMrUlNzaStDUzRnZlJTd2dBV2NaRTAvbFp1ZTdCTjdTbXdCSi9MamllcXNuRGc9PQo=",
-      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v1.1.2/ntfx.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SnpySVIxUElWMVM0RWh4eVR1TExJUVNRa1gwUDJRYmZHR0RCWHd5RDZDVndmRnlYQVJ3VmZBUnU1NE16L2VxeFFPRGVVSWtJcjFwL0toOXFhcGtlS1FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0MzE1NjMyCWZpbGU6bnRmeC5leGUKaHlVZWVtdlRnTnpudnJ5V2o4NkZjZHlOS1VVTndkellXbW1MK1M2cUx6UEh6Z2RTRndhOTA5NUVyQkRGOW11OGtVaERlOVdWZS81Y0dsb1VNbTczQmc9PQo=",
+      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v1.1.3/default.exe"
     }
   }
 }
