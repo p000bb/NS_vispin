@@ -23,3 +23,10 @@ Features
 Fixes
 - Fix the issue that the pin data is not updated when switching the chip data, resulting in incorrect statistics data
 - Fix the issue that the pin data is not updated when switching the chip data, resulting in incorrect detection results
+
+# 1.1.3
+Features
+- Add hover tooltip for pin functions, when hovering over a pin, the pin function will be displayed
+
+Fixes
+- Fix the issue that the program path cannot be updated normally under Chinese path
