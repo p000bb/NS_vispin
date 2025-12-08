@@ -30,3 +30,11 @@ Features
 
 Fixes
 - 修复程序路径在中文路径下无法正常更新程序的问题
+
+# 1.1.4
+Features
+- 新增支持EXTI二级菜单选择，优化EXTI的展现形式
+
+# 2.0.0
+Features
+- 新增BGA格式芯片支持
