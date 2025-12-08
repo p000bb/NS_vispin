@@ -30,3 +30,11 @@ Features
 
 Fixes
 - Fix the issue that the program path cannot be updated normally under Chinese path
+
+# 1.1.4
+Features
+- Add support for EXTI secondary menu selection, optimize the display form of EXTI
+
+# 2.0.0
+Features
+- Add support for BGA format chip
