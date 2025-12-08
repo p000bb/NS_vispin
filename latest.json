@@ -1,15 +1,15 @@
 {
-  "version": "1.1.3",
-  "notes": "Features\n- Add hover tooltip for pin functions, when hovering over a pin, the pin function will be displayed\n\nFixes\n- Fix the issue that the program path cannot be updated normally under Chinese path",
+  "version": "2.0.0",
+  "notes": "Features\n- Add support for BGA format chip",
   "notes_i18n": {
-    "zh-CN": "Features\n- 新增引脚功能悬浮提示功能，鼠标悬浮在引脚上时，会显示引脚功能\n\nFixes\n- 修复程序路径在中文路径下无法正常更新程序的问题",
-    "en": "Features\n- Add hover tooltip for pin functions, when hovering over a pin, the pin function will be displayed\n\nFixes\n- Fix the issue that the program path cannot be updated normally under Chinese path"
+    "zh-CN": "Features\n- 新增BGA格式芯片支持",
+    "en": "Features\n- Add support for BGA format chip"
   },
-  "pub_date": "2025-11-28T07:43:55.275Z",
+  "pub_date": "2025-12-08T10:21:29.763Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SnpySVIxUElWMVM0RWh4eVR1TExJUVNRa1gwUDJRYmZHR0RCWHd5RDZDVndmRnlYQVJ3VmZBUnU1NE16L2VxeFFPRGVVSWtJcjFwL0toOXFhcGtlS1FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY0MzE1NjMyCWZpbGU6bnRmeC5leGUKaHlVZWVtdlRnTnpudnJ5V2o4NkZjZHlOS1VVTndkellXbW1MK1M2cUx6UEh6Z2RTRndhOTA5NUVyQkRGOW11OGtVaERlOVdWZS81Y0dsb1VNbTczQmc9PQo=",
-      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v1.1.3/default.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SjBpNENxZWRJRDEyRlR0b1NacDBkRjhjWExaMWZrbHhoSHVLZ1RNenhNNWcwNmprTUdCZ01QWGhybHNIa0RLZ3ZoUFRSRGxVbmo0WmpPLy9kWFptbmdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY1MTg5MjAzCWZpbGU6bnRmeC5leGUKWnRpdEVDSHd1TFYvZm90TjZja2QrRU5Qd2JXWTIxS3JJa3ZUUmtsbk10cTYxdThNblpEY25hQTR3dWhlZ2NtS3ZlSGhsZDhXMVpsbCs3OWZtS3pkQ1E9PQo=",
+      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.0/ntfx.exe"
     }
   }
 }
