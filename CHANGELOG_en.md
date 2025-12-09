@@ -38,3 +38,12 @@ Features
 # 2.0.0
 Features
 - Add support for BGA format chip
+
+# 2.0.1
+Features
+- Add support for BGA format pin spacing ratio configuration
+- Optimize the alphabetical ascending display form of BGA format, default to skip some letters according to industry standards, and support double letter display
+- Optimize the font size of the selected text of BGA format pins, adjust according to the chip size and pin spacing ratio configuration
+
+Fixes
+- Fix the issue that the chip is empty when ctrl_z is undone in some cases
