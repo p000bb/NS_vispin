@@ -47,3 +47,10 @@ Features
 
 Fixes
 - Fix the issue that the chip is empty when ctrl_z is undone in some cases
+
+# 2.0.2
+Features
+- Improve the hover tooltip text introduction function
+
+Fixes
+- Fix the issue that the pin configuration color switching is stuck
