@@ -1,15 +1,15 @@
 {
-  "version": "2.0.1",
-  "notes": "Features\n- Add support for BGA format pin spacing ratio configuration\n- Optimize the alphabetical ascending display form of BGA format, default to skip some letters according to industry standards, and support double letter display\n- Optimize the font size of the selected text of BGA format pins, adjust according to the chip size and pin spacing ratio configuration\n\nFixes\n- Fix the issue that the chip is empty when ctrl_z is undone in some cases",
+  "version": "2.0.2",
+  "notes": "Features\n- Improve the hover tooltip text introduction function\n\nFixes\n- Fix the issue that the pin configuration color switching is stuck",
   "notes_i18n": {
-    "zh-CN": "Features\n- 新增BGA格式下引脚间距比例配置\n- 优化BGA格式字母升序展现形式，按照行业标准默认跳过部分字母，并且支持双字母展示\n- 优化BGA格式引脚选中文本的字体大小，根据芯片大小和脚间距比例配置自调整\n\nFixes\n- 修复ctrl_z在部分情况下撤回导致芯片置空的问题",
-    "en": "Features\n- Add support for BGA format pin spacing ratio configuration\n- Optimize the alphabetical ascending display form of BGA format, default to skip some letters according to industry standards, and support double letter display\n- Optimize the font size of the selected text of BGA format pins, adjust according to the chip size and pin spacing ratio configuration\n\nFixes\n- Fix the issue that the chip is empty when ctrl_z is undone in some cases"
+    "zh-CN": "Features\n- 完善引脚功能悬浮文本介绍功能\n\nFixes\n- 修复引脚配置颜色切换卡顿的问题",
+    "en": "Features\n- Improve the hover tooltip text introduction function\n\nFixes\n- Fix the issue that the pin configuration color switching is stuck"
   },
-  "pub_date": "2025-12-09T10:51:49.986Z",
+  "pub_date": "2025-12-10T07:53:18.407Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SncyaVNTMWpWbU1ZRHl6Y3RoZlBaa2lBSzhCc29NUXI3bjI3Y2k5c3NMbGhweGNZQkRIUG92SXFrMDhVZDRmTzF5UnZRSDBnQTdwSTN2cjVoWWxZdEFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY1Mjc3NDU3CWZpbGU6bnRmeC5leGUKQjRyV09sTzZiWWhUb0I1TzZyV1hGaVYrSVNTOEw1ZEU4c3ZRaVJhY2phRUIwRDlqdzNSMjUzWTVwWWMvL1U4VE1MRFBsZGU0YWdHNy9PaE9EVmxRRFE9PQo=",
-      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.1/ntfx.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SndySUZ4QTdlSm1sbEw1Ri85VVVSNXlpRHBjT2wwZVJuYUhhcTVjclR3K2ZKN21YVzd2dmFQekRMSm5uZzdwSG16VW5mb0k2SlRZYkhWTlNacVBaRFFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY1MzUzMTUxCWZpbGU6bnRmeC5leGUKUURkd2pVSWF0MXM4RThUY3RrZ2dWdFdYWXBkeU9xOU9rLzA0a2d5bzlTMzBhem9pbWRVdlJONGlNeXpVVFFJNno4Q1hIREQ2cFM1YWVlQnZLQ1dIQWc9PQo=",
+      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.2/ntfx.exe"
     }
   }
 }
