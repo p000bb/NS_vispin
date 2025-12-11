@@ -1,15 +1,15 @@
 {
-  "version": "2.0.2",
-  "notes": "Features\n- Improve the hover tooltip text introduction function\n\nFixes\n- Fix the issue that the pin configuration color switching is stuck",
+  "version": "2.0.3",
+  "notes": "Features\n- 完善芯片引脚起始位置标记点的样式，添加BGA格式的引脚起始位置标记点支持\n- 优化在高引脚数下，芯片配置字体大小比例和引脚间距比例计算卡顿的问题\n- 优化在高引脚数下，PNG、PDF下载模糊的问题",
   "notes_i18n": {
-    "zh-CN": "Features\n- 完善引脚功能悬浮文本介绍功能\n\nFixes\n- 修复引脚配置颜色切换卡顿的问题",
-    "en": "Features\n- Improve the hover tooltip text introduction function\n\nFixes\n- Fix the issue that the pin configuration color switching is stuck"
+    "zh-CN": "Features\n- 完善芯片引脚起始位置标记点的样式，添加BGA格式的引脚起始位置标记点支持\n- 优化在高引脚数下，芯片配置字体大小比例和引脚间距比例计算卡顿的问题\n- 优化在高引脚数下，PNG、PDF下载模糊的问题",
+    "en": ""
   },
-  "pub_date": "2025-12-10T07:53:18.407Z",
+  "pub_date": "2025-12-11T03:51:14.993Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SndySUZ4QTdlSm1sbEw1Ri85VVVSNXlpRHBjT2wwZVJuYUhhcTVjclR3K2ZKN21YVzd2dmFQekRMSm5uZzdwSG16VW5mb0k2SlRZYkhWTlNacVBaRFFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY1MzUzMTUxCWZpbGU6bnRmeC5leGUKUURkd2pVSWF0MXM4RThUY3RrZ2dWdFdYWXBkeU9xOU9rLzA0a2d5bzlTMzBhem9pbWRVdlJONGlNeXpVVFFJNno4Q1hIREQ2cFM1YWVlQnZLQ1dIQWc9PQo=",
-      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.2/ntfx.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SndsUkhlekpGMGcycGx1SG9SRmFjU2JNL2JycFBHeFpGL3UybHlneEJDRmkyYXpMbkV1UWRiTFpQbmZXZkRZUVRlZzJ2bm1WNUFZOVAvMDNicFF3MWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY1NDI1MDA0CWZpbGU6bnRmeC5leGUKSGRmTld5eStZb1h4QXg3SzUwRmdUQ2tiZWFURWl0QkFqWndxb0lhbGUvaDhnWEJCcVdncnBzSkFEVUhZWFljTTBwdkNzeWcrQTBodXMyYVBwbFVIQmc9PQo=",
+      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.3/ntfx.exe"
     }
   }
 }
