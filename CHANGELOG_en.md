@@ -54,3 +54,18 @@ Features
 
 Fixes
 - Fix the issue that the pin configuration color switching is stuck
+
+# 2.0.3
+Features
+- Improve the style of the starting position marker point of the pin of the BGA format, add support for the starting position marker point of the BGA format
+- Optimize the calculation of the font size ratio and the pin spacing ratio in the chip configuration in the case of high pin count, avoid calculation lag
+- Optimize the blur issue of PNG and PDF download in the case of high pin count
+
+Fixes
+- Fix the EXTIx interrupt value logic, where x is changed from reading the last group of numbers in the pin name to reading the first group of numbers in the pin name
+- Fix the issue that the pin function dropdown list function contains spaces, currently all spaces are removed
+
+# 2.0.4
+Fixes
+- Fix the issue that the EXTIx interrupt value logic is incorrect, where x is changed from reading the last group of numbers in the pin name to reading the first group of numbers in the pin name
+- Fix the issue that the pin function dropdown list function contains spaces, currently all spaces are removed
