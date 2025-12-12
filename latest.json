@@ -1,15 +1,15 @@
 {
-  "version": "2.0.3",
-  "notes": "Features\n- 完善芯片引脚起始位置标记点的样式，添加BGA格式的引脚起始位置标记点支持\n- 优化在高引脚数下，芯片配置字体大小比例和引脚间距比例计算卡顿的问题\n- 优化在高引脚数下，PNG、PDF下载模糊的问题",
+  "version": "2.0.4",
+  "notes": "Fixes\n- Fix the issue that the EXTIx interrupt value logic is incorrect, where x is changed from reading the last group of numbers in the pin name to reading the first group of numbers in the pin name\n- Fix the issue that the pin function dropdown list function contains spaces, currently all spaces are removed",
   "notes_i18n": {
-    "zh-CN": "Features\n- 完善芯片引脚起始位置标记点的样式，添加BGA格式的引脚起始位置标记点支持\n- 优化在高引脚数下，芯片配置字体大小比例和引脚间距比例计算卡顿的问题\n- 优化在高引脚数下，PNG、PDF下载模糊的问题",
-    "en": ""
+    "zh-CN": "Fixes\n- 修复EXTIx中断取值逻辑，其中x由之前读取引脚名称最后一组数字改成读取引脚名称第一组数字\n- 修复引脚下拉列表功能包含空格的问题，目前会去除所有的空格\n- 修复同一芯片下，存在多个同名引脚时，导致Excel数据重复的问题",
+    "en": "Fixes\n- Fix the issue that the EXTIx interrupt value logic is incorrect, where x is changed from reading the last group of numbers in the pin name to reading the first group of numbers in the pin name\n- Fix the issue that the pin function dropdown list function contains spaces, currently all spaces are removed"
   },
-  "pub_date": "2025-12-11T03:51:14.993Z",
+  "pub_date": "2025-12-12T08:32:19.498Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SndsUkhlekpGMGcycGx1SG9SRmFjU2JNL2JycFBHeFpGL3UybHlneEJDRmkyYXpMbkV1UWRiTFpQbmZXZkRZUVRlZzJ2bm1WNUFZOVAvMDNicFF3MWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY1NDI1MDA0CWZpbGU6bnRmeC5leGUKSGRmTld5eStZb1h4QXg3SzUwRmdUQ2tiZWFURWl0QkFqWndxb0lhbGUvaDhnWEJCcVdncnBzSkFEVUhZWFljTTBwdkNzeWcrQTBodXMyYVBwbFVIQmc9PQo=",
-      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.3/ntfx.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SjYybEtuTUtDRi9ONFcrRjRVREt2eWRBTXJRMC96cEVSU1l1cGdmUDd3andzWkNMeTVpY3RSdDMzUlBCMnBMYmQydW1BMTBKd3h3eGlnbUZaaXI4WndrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY1NTI4MjcxCWZpbGU6bnRmeC5leGUKOGF5Tkp6S3VjK2xVOEFyYi9lQmNwY2NoT3VmdUc5NCtqRE9GeDZPbkpIVkJpSGlINlQ1WmpVYXFFVXNrcDgxOG9ZZnVIYTFWYVNpeEZHbXUvOXRKQWc9PQo=",
+      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.4/ntfx.exe"
     }
   }
 }
