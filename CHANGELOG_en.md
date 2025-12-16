@@ -69,3 +69,11 @@ Fixes
 Fixes
 - Fix the issue that the EXTIx interrupt value logic is incorrect, where x is changed from reading the last group of numbers in the pin name to reading the first group of numbers in the pin name
 - Fix the issue that the pin function dropdown list function contains spaces, currently all spaces are removed
+
+# 2.0.5
+Features
+- Add batch delete project function
+
+Fixes
+- Fix the issue that the NRST pin function cannot be selected
+- Fix the issue that the EXTIx value is incorrect, now it will accurately read the numbers in the pin name
