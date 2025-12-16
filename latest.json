@@ -1,15 +1,15 @@
 {
-  "version": "2.0.4",
-  "notes": "Fixes\n- Fix the issue that the EXTIx interrupt value logic is incorrect, where x is changed from reading the last group of numbers in the pin name to reading the first group of numbers in the pin name\n- Fix the issue that the pin function dropdown list function contains spaces, currently all spaces are removed",
+  "version": "2.0.5",
+  "notes": "Features\n- Add batch delete project function\n\nFixes\n- Fix the issue that the NRST pin function cannot be selected\n- Fix the issue that the EXTIx value is incorrect, now it will accurately read the numbers in the pin name",
   "notes_i18n": {
-    "zh-CN": "Fixes\n- 修复EXTIx中断取值逻辑，其中x由之前读取引脚名称最后一组数字改成读取引脚名称第一组数字\n- 修复引脚下拉列表功能包含空格的问题，目前会去除所有的空格\n- 修复同一芯片下，存在多个同名引脚时，导致Excel数据重复的问题",
-    "en": "Fixes\n- Fix the issue that the EXTIx interrupt value logic is incorrect, where x is changed from reading the last group of numbers in the pin name to reading the first group of numbers in the pin name\n- Fix the issue that the pin function dropdown list function contains spaces, currently all spaces are removed"
+    "zh-CN": "Features\n- 新增批量删除项目功能\n\nFixes\n- 修复NRST引脚功能无法选择的问题\n- 修复EXTIx取值问题，现在会准确的读取引脚名称中的数字",
+    "en": "Features\n- Add batch delete project function\n\nFixes\n- Fix the issue that the NRST pin function cannot be selected\n- Fix the issue that the EXTIx value is incorrect, now it will accurately read the numbers in the pin name"
   },
-  "pub_date": "2025-12-12T08:32:19.498Z",
+  "pub_date": "2025-12-16T09:00:29.357Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SjYybEtuTUtDRi9ONFcrRjRVREt2eWRBTXJRMC96cEVSU1l1cGdmUDd3andzWkNMeTVpY3RSdDMzUlBCMnBMYmQydW1BMTBKd3h3eGlnbUZaaXI4WndrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY1NTI4MjcxCWZpbGU6bnRmeC5leGUKOGF5Tkp6S3VjK2xVOEFyYi9lQmNwY2NoT3VmdUc5NCtqRE9GeDZPbkpIVkJpSGlINlQ1WmpVYXFFVXNrcDgxOG9ZZnVIYTFWYVNpeEZHbXUvOXRKQWc9PQo=",
-      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.4/ntfx.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SnpaNi9rOHZRK2hJT3JObDhwdmIyaitIdzZVeHVCbE1HK1Z3U2RFQ3lHV1JnNk14UTZuZWYreVVWNGRVYmpDZEtQbERnajJ6Y3g2b3RaRXBtUlJ3aWdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY1ODc1NTc4CWZpbGU6bnRmeC5leGUKWlNiM2RnU3FJakpPdENFdnJMekk3Q3Z2Z0xCcTlBd1Q3NG8wS0pzbzR5MGhNWnEzUjV4cWhYeUdLeURxTiszcExiN2NTN2N5UGw1WnQydTZJUm9uQ0E9PQo=",
+      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.5/ntfx.exe"
     }
   }
 }
