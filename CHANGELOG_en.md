@@ -77,3 +77,8 @@ Features
 Fixes
 - Fix the issue that the NRST pin function cannot be selected
 - Fix the issue that the EXTIx value is incorrect, now it will accurately read the numbers in the pin name
+
+# 2.0.6
+Fixes
+- Fix the issue that the checkbox in the conflict configuration is not selected
+- Fix the issue that the EXTI line conflict detection fails
