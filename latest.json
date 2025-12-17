@@ -1,15 +1,15 @@
 {
-  "version": "2.0.5",
-  "notes": "Features\n- Add batch delete project function\n\nFixes\n- Fix the issue that the NRST pin function cannot be selected\n- Fix the issue that the EXTIx value is incorrect, now it will accurately read the numbers in the pin name",
+  "version": "2.0.6",
+  "notes": "Fixes\n- Fix the issue that the checkbox in the conflict configuration is not selected\n- Fix the issue that the EXTI line conflict detection fails",
   "notes_i18n": {
-    "zh-CN": "Features\n- 新增批量删除项目功能\n\nFixes\n- 修复NRST引脚功能无法选择的问题\n- 修复EXTIx取值问题，现在会准确的读取引脚名称中的数字",
-    "en": "Features\n- Add batch delete project function\n\nFixes\n- Fix the issue that the NRST pin function cannot be selected\n- Fix the issue that the EXTIx value is incorrect, now it will accurately read the numbers in the pin name"
+    "zh-CN": "Fixes\n- 修复冲突配置里面的复选框勾选失效的问题\n- 修复引脚功能EXTI中断线冲突检测失效的问题",
+    "en": "Fixes\n- Fix the issue that the checkbox in the conflict configuration is not selected\n- Fix the issue that the EXTI line conflict detection fails"
   },
-  "pub_date": "2025-12-16T09:00:29.357Z",
+  "pub_date": "2025-12-17T08:44:08.042Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SnpaNi9rOHZRK2hJT3JObDhwdmIyaitIdzZVeHVCbE1HK1Z3U2RFQ3lHV1JnNk14UTZuZWYreVVWNGRVYmpDZEtQbERnajJ6Y3g2b3RaRXBtUlJ3aWdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY1ODc1NTc4CWZpbGU6bnRmeC5leGUKWlNiM2RnU3FJakpPdENFdnJMekk3Q3Z2Z0xCcTlBd1Q3NG8wS0pzbzR5MGhNWnEzUjV4cWhYeUdLeURxTiszcExiN2NTN2N5UGw1WnQydTZJUm9uQ0E9PQo=",
-      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.5/ntfx.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SjRKYzV0Nk1LZWtlRmVmU3FmT2FGUm1ocGQwMXJPc0VJb1IzRkNxeGlORlZXaWZVYmEvcE00NGQvNU1nd0VCcTd1bVpvR2FZSjY4R0Y2STF5d05VWVFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY1OTYwOTk1CWZpbGU6bnRmeC5leGUKZm9Md0FPNndrV1JpalRnTi9DRnRmY0tOWDJNbmM2N0MyK2cyNk1SS3E4eDJCZDIvVERvWXBEbTZ5aUJyTFE2dENJeldnWllEK01QcExmNFNRcGpwQXc9PQo=",
+      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.6/ntfx.exe"
     }
   }
 }
