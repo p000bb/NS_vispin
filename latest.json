@@ -1,15 +1,15 @@
 {
-  "version": "2.0.6",
-  "notes": "Fixes\n- Fix the issue that the checkbox in the conflict configuration is not selected\n- Fix the issue that the EXTI line conflict detection fails",
+  "version": "2.0.8",
+  "notes": "Fixes\n- Fix the issue that the pin search flashes when switching the chip data",
   "notes_i18n": {
-    "zh-CN": "Fixes\n- 修复冲突配置里面的复选框勾选失效的问题\n- 修复引脚功能EXTI中断线冲突检测失效的问题",
-    "en": "Fixes\n- Fix the issue that the checkbox in the conflict configuration is not selected\n- Fix the issue that the EXTI line conflict detection fails"
+    "zh-CN": "Fixes\n- 修复切换芯片数据的时候，引脚搜索闪烁出错的问题",
+    "en": "Fixes\n- Fix the issue that the pin search flashes when switching the chip data"
   },
-  "pub_date": "2025-12-17T08:44:08.042Z",
+  "pub_date": "2025-12-22T03:54:33.221Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SjRKYzV0Nk1LZWtlRmVmU3FmT2FGUm1ocGQwMXJPc0VJb1IzRkNxeGlORlZXaWZVYmEvcE00NGQvNU1nd0VCcTd1bVpvR2FZSjY4R0Y2STF5d05VWVFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY1OTYwOTk1CWZpbGU6bnRmeC5leGUKZm9Md0FPNndrV1JpalRnTi9DRnRmY0tOWDJNbmM2N0MyK2cyNk1SS3E4eDJCZDIvVERvWXBEbTZ5aUJyTFE2dENJeldnWllEK01QcExmNFNRcGpwQXc9PQo=",
-      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.6/ntfx.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SjFGeStET2VzTWQvdSt6Skl4dmxzN3Bic05ZdFVYMVBCbmZtbHVnaDhEeXJvVUhUOWVhY0hyUmMveFY2YThVeU1OUW5RVDhmT09TdjE5MXY2S1Rpc0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY2Mzc1NjYyCWZpbGU6bnRmeC5leGUKcU1LUVoySjZ2c0hmdGkrb1M2MW1oaVRTRFZJcEVENFppOVhpeWVZK3g1cjdSTlJ2djd3SHkrWTRtOVplaGZGRFl4QVFkOVhPcTVnaHVXZU4rRFdwQXc9PQo=",
+      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.8/ntfx.exe"
     }
   }
 }
