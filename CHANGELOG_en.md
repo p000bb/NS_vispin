@@ -82,3 +82,12 @@ Fixes
 Fixes
 - Fix the issue that the checkbox in the conflict configuration is not selected
 - Fix the issue that the EXTI line conflict detection fails
+
+# 2.0.7
+Fixes
+- Fix the issue that the secondary EXTI option display is abnormal under different format pin names
+- Fix the issue that the button text of the alternative solution under the conflict details is displayed incorrectly
+
+# 2.0.8
+Fixes
+- Fix the issue that the pin search flashes when switching the chip data
