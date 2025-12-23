@@ -91,3 +91,7 @@ Fixes
 # 2.0.8
 Fixes
 - Fix the issue that the pin search flashes when switching the chip data
+
+# 2.0.9
+Features
+- Add desktop update log function, click the version number to view the update log
