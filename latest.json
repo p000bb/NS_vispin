@@ -1,15 +1,15 @@
 {
-  "version": "2.0.8",
-  "notes": "Fixes\n- Fix the issue that the pin search flashes when switching the chip data",
+  "version": "2.0.9",
+  "notes": "Features\n- Add desktop update log function, click the version number to view the update log",
   "notes_i18n": {
-    "zh-CN": "Fixes\n- 修复切换芯片数据的时候，引脚搜索闪烁出错的问题",
-    "en": "Fixes\n- Fix the issue that the pin search flashes when switching the chip data"
+    "zh-CN": "Features\n- 新增桌面端更新日志功能，点击版本号可以查看更新日志",
+    "en": "Features\n- Add desktop update log function, click the version number to view the update log"
   },
-  "pub_date": "2025-12-22T03:54:33.221Z",
+  "pub_date": "2025-12-23T02:45:46.956Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SjFGeStET2VzTWQvdSt6Skl4dmxzN3Bic05ZdFVYMVBCbmZtbHVnaDhEeXJvVUhUOWVhY0hyUmMveFY2YThVeU1OUW5RVDhmT09TdjE5MXY2S1Rpc0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY2Mzc1NjYyCWZpbGU6bnRmeC5leGUKcU1LUVoySjZ2c0hmdGkrb1M2MW1oaVRTRFZJcEVENFppOVhpeWVZK3g1cjdSTlJ2djd3SHkrWTRtOVplaGZGRFl4QVFkOVhPcTVnaHVXZU4rRFdwQXc9PQo=",
-      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.8/ntfx.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SitpZ0RFaDdoZEFvNHkwN3d2UERYVVRiVDYzVnVxYTlRYlh0bm9nUk9sZ3l1VnNzRnVBUzBSV0doNEsvdFZCakpXbWN0dnNlWmlSYXpUaWlJSExZcEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY2NDU3ODk4CWZpbGU6bnRmeC5leGUKZmhqejZiV0tIWGdIbEJkaXJ1S0tFSjNDbUdJeE1OTC9EcnpMWDZUQ1lIWC80MXFjK08zOEdFT01rdXpyWWNlRFFlM2ZFemt3amF1NzY1WHZPb0Y2Q3c9PQo=",
+      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.9/ntfx.exe"
     }
   }
 }
