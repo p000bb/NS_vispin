@@ -1,15 +1,15 @@
 {
-  "version": "2.0.9",
-  "notes": "Features\n- Add desktop update log function, click the version number to view the update log",
+  "version": "2.1.0",
+  "notes": "Fixes\n- Fix the issue that the pin dropdown list position is incorrect when executing the browser zoom event",
   "notes_i18n": {
-    "zh-CN": "Features\n- 新增桌面端更新日志功能，点击版本号可以查看更新日志",
-    "en": "Features\n- Add desktop update log function, click the version number to view the update log"
+    "zh-CN": "Fixes\n- 修复执行浏览器缩放事件导致引脚下拉列表位置错位",
+    "en": "Fixes\n- Fix the issue that the pin dropdown list position is incorrect when executing the browser zoom event"
   },
-  "pub_date": "2025-12-23T02:45:46.956Z",
+  "pub_date": "2025-12-24T03:35:52.487Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SitpZ0RFaDdoZEFvNHkwN3d2UERYVVRiVDYzVnVxYTlRYlh0bm9nUk9sZ3l1VnNzRnVBUzBSV0doNEsvdFZCakpXbWN0dnNlWmlSYXpUaWlJSExZcEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY2NDU3ODk4CWZpbGU6bnRmeC5leGUKZmhqejZiV0tIWGdIbEJkaXJ1S0tFSjNDbUdJeE1OTC9EcnpMWDZUQ1lIWC80MXFjK08zOEdFT01rdXpyWWNlRFFlM2ZFemt3amF1NzY1WHZPb0Y2Q3c9PQo=",
-      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.0.9/ntfx.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUV2R2WUlXRTd5SitJMWlvWHFRR1Zrd3FLMjd2SzJrbTNVa0xWUHkwUFpJYUl6MmxGdkpJWG1DUzcxdFZjMEFTbHFsaUNoVktKS0djcU80M3FpUml3WnU4UHpGYktnYkFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzY2NTQ3MzA2CWZpbGU6bnRmeC5leGUKNnVYeHlmakpRMWF1TWdJVElxemNYWXlOZHZVaXZ4bDVnS3pKbklZc1laZ3hoZkdmZFZxVWJyOG9Ob1lTRlphQnk5aUNsU3BJQlpvRHFWTFlVdXV6REE9PQo=",
+      "url": "https://gh-proxy.com/https://github.com/p000bb/NS_vispin/releases/download/v2.1.0/ntfx.exe"
     }
   }
 }
