@@ -95,3 +95,7 @@ Fixes
 # 2.0.9
 Features
 - Add desktop update log function, click the version number to view the update log
+
+# 2.1.0
+Fixes
+- Fix the issue that the pin dropdown list position is incorrect when executing the browser zoom event
